@@ -1,4 +1,4 @@
-#permalink: /:title
 auto: true
 server: true
 pygments: true
+permalink: /:year/:month/:day/:title/
