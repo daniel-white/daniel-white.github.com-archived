@@ -5,3 +5,4 @@ categories:
 - foo
 ---
 
+foo
