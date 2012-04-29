@@ -11,11 +11,13 @@
   </header>
   <ul>
     {% for category in site.categories %}
-	<li>{{ category | size }}</li>
+	<li>{{ category | category_link }}</li>
 	{% endfor %}
   </ul>
   {{ content }}
   <footer>&copy; {{ site.time | date: "%Y" }} Daniel A. White</footer>
   <script src="/js/bootstrap.min.js" />
+  
+  {{ site.categories | categories_nav_links }}
 </body>
 </html>

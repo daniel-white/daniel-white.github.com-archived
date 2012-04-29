@@ -120,7 +120,20 @@ module Jekyll
   
   # Adds some extra filters used during the category creation process.
   module Filters
-    
+    def category_link(category)
+      '<a href="/blog/'+category[0]+'/">'+category[0]+'</a>'
+	end
+	
+	def categories_nav_links(categories)
+	  categories = categories.map do |category| 
+	    cat = Class.new
+		cat.link = category_link(category)
+	  end
+	  
+	  categories[0].to_s
+	end
+	
+	
     # Outputs a list of categories as comma-separated <a> links. This is used
     # to output the category list for each post on a category page.
     #
