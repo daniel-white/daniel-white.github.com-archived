@@ -7,41 +7,15 @@
 </head>
 <body>
   <header>
-    <div class="navbar navbar-fixed-top">
-		<div class="container">
-            <ul class="nav">
-              <li class="">
-                <a href="./index.html">Overview</a>
-              </li>
-              <li class="">
-                <a href="./scaffolding.html">Scaffolding</a>
-              </li>
-              <li class="active">
-                <a href="./base-css.html">Base CSS</a>
-              </li>
-              <li class="">
-                <a href="./components.html">Components</a>
-              </li>
-              <li class="">
-                <a href="./javascript.html">Javascript plugins</a>
-              </li>
-              <li class="">
-                <a href="./less.html">Using LESS</a>
-              </li>
-              <li class="divider-vertical"></li>
-              <li class="">
-                <a href="./download.html">Customize</a>
-              </li>
-              <li class="">
-                <a href="./examples.html">Examples</a>
-              </li>
-            </ul>
-</div>
-      </div>
     <a href="/">Daniel A. White</a>
   </header>
+  <ul>
+    {% for category in site.categories %}
+	<li>{{ category }}</li>
+	{% endfor %}
+  </ul>
   {{ content }}
-  <footer>&copy; 2012 Daniel A. White</footer>
+  <footer>&copy; {{ site.time | date: "%Y" }} Daniel A. White</footer>
   <script src="/js/bootstrap.min.js" />
 </body>
 </html>
