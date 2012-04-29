@@ -3,20 +3,29 @@
 <head>
   <meta charset="utf-8">
   <title>Daniel A. White - {{ page.title }}</title>
-  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="/css/site.css" /> 
 </head>
 <body>
   <header>
+    <div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      ...
+    </div>
+  </div>
+</div>
     <a href="/">Daniel A. White</a>
   </header>
   <ul>
     {% for category in site.categories %}
-	<li>{{ category | category_link }}</li>
+	<li>{{ category.name }}</li>
 	{% endfor %}
+  </ul>
+ndfor %}
   </ul>
   {{ content }}
   <footer>&copy; {{ site.time | date: "%Y" }} Daniel A. White</footer>
-  <script src="/js/bootstrap.min.js" />
+  <script src="/js/site.js" />
   
   {{ site.categories | categories_nav_links }}
 </body>
