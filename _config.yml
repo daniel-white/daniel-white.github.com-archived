@@ -2,3 +2,4 @@ auto: true
 server: true
 pygments: true
 permalink: /blog/:year/:month/:day/:title/
+category_dir: /blog/

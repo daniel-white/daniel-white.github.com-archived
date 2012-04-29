@@ -11,7 +11,7 @@
   </header>
   <ul>
     {% for category in site.categories %}
-	<li>{{ category }}</li>
+	<li>{{ category | size }}</li>
 	{% endfor %}
   </ul>
   {{ content }}
