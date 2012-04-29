@@ -2,3 +2,4 @@
 title: CssFile
 ---
 {% include css/bootstrap.min.css %}
+{% include css/site.css %}

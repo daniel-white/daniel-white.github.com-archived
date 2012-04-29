@@ -10,11 +10,21 @@
     <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      ...
+      <a href="/" class="brand">Daniel A. White</a>
+	  <ul class="nav">
+        <li class="dropdown" id="social-networks">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Networks</a>
+		  <ul class="dropdown-menu">
+            <li><a href="http://facebook.com/dwhite" class="facebook">Facebook</a></li>
+            <li><a href="http://twitter.com/thetrueaplus" class="twitter">Twitter</a></li>
+            <li><a href="http://stackoverflow.com/users/23528/daniel-a-white" class="stackoverflow">Stack Overflow</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
-    <a href="/">Daniel A. White</a>
+    
   </header>
   <ul>
     {% for category in site.categories %}
@@ -25,7 +35,7 @@ ndfor %}
   </ul>
   {{ content }}
   <footer>&copy; {{ site.time | date: "%Y" }} Daniel A. White</footer>
-  <script src="/js/site.js" />
+  <script src="/js/site.js"></script>
   
   {{ site.categories | categories_nav_links }}
 </body>

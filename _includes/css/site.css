@@ -1,0 +1,21 @@
+body {
+  padding-top: 40px;
+}
+
+#social-networks ul li a {
+  line-height: 24px;
+  padding-left: 38px;
+  background-repeat:no-repeat;
+  background-position: 15px center; 
+}
+#social-networks ul li a.facebook {
+  background-image: url(../img/facebook.png);
+}
+#social-networks ul li a.twitter {
+  background-image: url(../img/twitter.png);
+}
+
+
+#social-networks ul li a.stackoverflow {
+  background-image: url(../img/stackoverflow.png);
+}
